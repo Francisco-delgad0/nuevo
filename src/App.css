@@ -4,3 +4,8 @@
   text-align: center;
   font-weight: 700;
 }
+.custom-modal {
+  display: flex;
+  align-items: last baseline;
+  justify-content: center;
+}
