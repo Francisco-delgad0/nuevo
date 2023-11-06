@@ -41,7 +41,7 @@ function CuerpoPagina() {
         </Modal.Header>
         <Modal.Body>
           <iframe
-            width="560"
+            width="1000"
             height="315"
             src="https://www.youtube.com/embed/Y2Ptue29P_o"
             frameBorder="0"
