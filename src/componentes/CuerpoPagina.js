@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import akira from "../imagenes/akira.png";
 import { Modal, Button } from 'react-bootstrap';
+import "../hola.css";
 
 function CuerpoPagina() {
   const [showModal, setShowModal] = useState(false);
@@ -22,7 +23,7 @@ function CuerpoPagina() {
           <img src={akira} alt="Akira" style={{ cursor: 'pointer' }} onClick={openModal} />
         </div>
         <div className="col-md-9">
-          <p>Año 2019. Neo-Tokyo es una ciudad construida sobre las ruinas de la antigua capital japonesa destruida tras la Tercera Guerra Mundial. Japón es un país al borde del colapso que sufre continuas crisis políticas. En secreto, un equipo de científicos ha reanudado por orden del ejército un experimento para encontrar a individuos que puedan controlar el arma definitiva: una fuerza denominada "la energía absoluta". Pero los habitantes de Neo-Tokyo tienen otras cosas de las que preocuparse. Uno de ellos es Kaneda, un joven pandillero líder de una banda de motoristas. Durante una pelea, su mejor amigo, Tetsuo, sufre un extraño accidente y termina ingresado en unas instalaciones militares. Allí los científicos descubrirán que es el poseedor de la energía absoluta. Pero Tetsuo, que no se resigna a convertirse en un conejillo de indias, muy pronto se convertirá en la amenaza más grande que el mundo ha conocido.</p>
+          <p>Año 2019. Neo-Tokyo es una ciudad construida sobre las ruinas de la antigua capital japonesa destruida tras la Tercera Guerra Mundial...</p>
           <div className="row">
             <div className="col-md-6">
               <h6>Titulo original: </h6>
@@ -35,24 +36,25 @@ function CuerpoPagina() {
           </div>
         </div>
       </div>
-      <Modal show={showModal} onHide={closeModal} centered>
-        <Modal.Header closeButton>
-          <Modal.Title>Trailer</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          <iframe
-            width="1000"
-            height="315"
-            src="https://www.youtube.com/embed/Y2Ptue29P_o"
-            frameBorder="0"
-            allowFullScreen
-          ></iframe>
-        </Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={closeModal}>
-            Cerrar
-          </Button>
-        </Modal.Footer>
+      <Modal show={showModal} onHide={closeModal} className="custom-modal">
+        <div className="modal-dialog modal-xl">
+          <div className="modal-content">
+            <Modal.Header closeButton>
+            <h5 className="modal-title text-center" style={{paddingLeft:"50%"}}>AKIRA</h5>
+            </Modal.Header>
+            <Modal.Body style={{ position: 'relative', paddingTop: '530px', paddingLeft:"560px", paddingRight:"560px" }}>
+              <iframe
+                width= '100%'
+                height= '100%'
+                src="https://www.youtube.com/embed/Y2Ptue29P_o"
+                frameBorder="0"
+                allowFullScreen
+                style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+              ></iframe>
+            </Modal.Body>
+
+          </div>
+        </div>
       </Modal>
     </div>
   );
