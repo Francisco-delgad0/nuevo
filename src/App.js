@@ -1,17 +1,20 @@
 import React from 'react';
-import './App.css';
-import Navegador from './componentes/Navegador';
-import Footer from './componentes/Footer';
-import CuerpoPagina from './componentes/CuerpoPagina';
-
+import HomePage from './Componentes/Homepage';
+import Cartelera from './Componentes/Cartelera';
+import Localidades from './Componentes/Localidades';
+import Confiteria from './Componentes/Confiteria';
+import Navbar  from './Componentes/Navbar';
+import Footer from './Componentes/Footer';
 
 function App() {
   return (
     <div className="App">
-      <Navegador />
-      <CuerpoPagina />
-      <Footer />
-
+      <Navbar/>
+      <HomePage/>
+      <Cartelera/>
+      <Localidades/>
+      <Confiteria/>
+      <Footer/>
     </div>
   );
 }
