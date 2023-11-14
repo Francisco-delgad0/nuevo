@@ -15,7 +15,7 @@ function Footer() {
             <h5>Enlaces rápidos</h5>
             <ul className="list-unstyled">
               <li><a href="#">Inicio</a></li>
-              <li><a href="#">Acerca de nosotros</a></li>
+              <li><a href="#">Acerca</a></li>
               <li><a href="#">Servicios</a></li>
               <li><a href="#">Contacto</a></li>
             </ul>
