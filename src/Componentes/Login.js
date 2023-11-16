@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../App.css'; // Importa los estilos CSS externos
+import '../App.css';
 
 const AuthForm = () => {
   const [loginData, setLoginData] = useState({ email: '', password: '' });
@@ -31,9 +31,16 @@ const AuthForm = () => {
     console.log('Signup Data:', signupData);
   };
 
+  const handleClose = () => {
+    // Lógica para cerrar el formulario
+    // Por ejemplo, si tienes un estado para mostrar/ocultar el formulario
+    // setFormVisible(false);
+  };
+
   return (
     <div className="auth-container">
       <div className="auth-card">
+      <button type="button" class="btn-close m-2" aria-label="Close"></button>
         <div className="auth-header">
           <h2>{isLogin ? 'Iniciar Sesion' : 'Registrate'}</h2>
         </div>
@@ -116,5 +123,6 @@ const AuthForm = () => {
     </div>
   );
 };
+
 
 export default AuthForm;

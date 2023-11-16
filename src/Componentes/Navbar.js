@@ -1,6 +1,5 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { Button, Dropdown } from 'react-bootstrap';
 import logo from '../imagenes/Logo.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../App.css';
@@ -16,25 +15,27 @@ function Navbar() {
       <NavLink to="/Cartelera" className="nav-item" activeClassName="is-active">Cartelera</NavLink>
       <NavLink to="/Localidaes" className="nav-item" activeClassName="isactive">Cines</NavLink>
       <NavLink to="/Confiteria" className="nav-item" activeClassName="is-active">Confitería</NavLink>
-      <NavLink to="/Login" className="nav-button1">Iniciar Sesión</NavLink>
+      <NavLink to="/Login" className="nav-button">Iniciar Sesión</NavLink>
+      <NavLink to="/Local" className="nav-button1">
+        <span>Elige tu cine</span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="icon icon-tabler icon-tabler-arrow-badge-down"
+          width="20" /* Ajusta el tamaño según sea necesario */
+          height="20"
+          viewBox="0 0 24 24"
+          strokeWidth="1.5"
+          stroke="#4659DF"
+          fill="none"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          style={{ marginLeft: '5px' }} /* Ajusta el margen izquierdo */
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M17 13v-6l-5 4l-5 -4v6l5 4z" />
+        </svg>
+      </NavLink>
 
-      <div>
-      {/* Otro contenido de la página de inicio aquí */}
-
-      {/* Botón y lista desplegable */}
-      <Dropdown className='z-30'>
-        <Dropdown.Toggle variant="outline-primary" id="dropdown-basic">
-          Nombres
-        </Dropdown.Toggle>
-
-        <Dropdown.Menu>
-          {/* Mostrar lista de nombres en el menú desplegable */}
-          {nombres.map((nombre, index) => (
-            <Dropdown.Item key={index}>{nombre}</Dropdown.Item>
-          ))}
-        </Dropdown.Menu>
-      </Dropdown>
-    </div>
 
       <span className="nav-indicador"></span>
     </nav>

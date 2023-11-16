@@ -3,9 +3,9 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../App.css';
 
-function Cartelera(){
+function Local(){
   return (
-      <h1>Cartelera </h1>
+      <h1>Local </h1>
   );
 }
-export default Cartelera;
+export default Local;
