@@ -20,7 +20,7 @@ function Cartelera() {
                         <div className="card">
                             <img src={pelicula.imagen} className="card-img-top" alt={pelicula.titulo} />
                             <div className="card-body">
-                                <h5 className="card-title">{pelicula.titulo}</h5>
+                                <h5 className="card-title text-center">{pelicula.titulo}</h5>
                             </div>
                         </div>
                     </div>
