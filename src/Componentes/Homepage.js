@@ -1,8 +1,11 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-function HomePage(){
-    return (
-        <h1>HomePage</h1>
-    );}
 
-export default HomePage
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../App.css';
+
+function Homepage(){
+  return (
+      <h1>Homepage </h1>
+  );
+}
+export default Homepage;
