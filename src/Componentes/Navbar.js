@@ -13,7 +13,7 @@ function Navbar() {
       {/* <img src={logo} alt="logo"></img> */}
       <NavLink to="/Homepage" className="nav-item z-10" activeclassname="is-active" exact="true">Home</NavLink>
       <NavLink to="/Cartelera" className="nav-item" activeClassName="is-active">Cartelera</NavLink>
-      <NavLink to="/Localidaes" className="nav-item" activeClassName="isactive">Cines</NavLink>
+      <NavLink to="/Localidaes" className="nav-item" activeClassName="is-active">Cines</NavLink>
       <NavLink to="/Confiteria" className="nav-item" activeClassName="is-active">Confitería</NavLink>
       <NavLink to="/Login" className="nav-button">Iniciar Sesión</NavLink>
 

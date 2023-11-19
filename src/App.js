@@ -6,6 +6,7 @@ import Localidades from './Paginas/Localidades';
 import Confiteria from './Paginas/Confiteria';
 import Navbar  from './Componentes/Navbar';
 import Login from './Paginas/Login';
+
 import Footer from './Paginas/Footer';
 
 
