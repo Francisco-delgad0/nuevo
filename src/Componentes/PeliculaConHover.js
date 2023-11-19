@@ -8,7 +8,7 @@ const PeliculaConHover = ({ pelicula, imagePath }) => {
         <div className="col-lg-4 mb-4">
             <div className="card">
                 <div className="overlay">
-                <NavLink to="/MovieCard" className="nav-link" activeClassName="is-active">
+                <NavLink to={`/DetallesPelicula/${pelicula.id}`} className="nav-link">
                         <button className="btn btn-primary card-button">
                             Ver detalles
                         </button>
