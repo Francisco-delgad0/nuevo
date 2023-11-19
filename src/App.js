@@ -1,12 +1,12 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import HomePage from './Componentes/Homepage';
-import Cartelera from './Componentes/Cartelera';
-import Localidades from './Componentes/Localidades';
-import Confiteria from './Componentes/Confiteria';
+import HomePage from './Paginas/Homepage';
+import Cartelera from './Paginas/Cartelera';
+import Localidades from './Paginas/Localidades';
+import Confiteria from './Paginas/Confiteria';
 import Navbar  from './Componentes/Navbar';
-import Login from './Componentes/Login';
-import Footer from './Componentes/Footer';
+import Login from './Paginas/Login';
+import Footer from './Paginas/Footer';
 
 
 function App() {
