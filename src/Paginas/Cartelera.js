@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import PeliculaConHover from '../Componentes/PeliculaConHover'; // Importa el componente PeliculaConHover
 
 function Cartelera() {
     const API_URL = "https://api.themoviedb.org/3";
@@ -48,14 +48,7 @@ function Cartelera() {
             </div>
             <div className="row">
                 {peliculas.map((pelicula) => (
-                    <div key={pelicula.id} className="col-lg-4 mb-4">
-                        <div className="card">
-                            <img src={`${IMAGE_PATH}/${pelicula.poster_path}`} className="card-img-top" alt={pelicula.title} />
-                            <div className="card-body">
-                                <h5 className="card-title">{pelicula.title}</h5>
-                            </div>
-                        </div>
-                    </div>
+                    <PeliculaConHover key={pelicula.id} pelicula={pelicula} imagePath={IMAGE_PATH} />
                 ))}
             </div>
         </div>
